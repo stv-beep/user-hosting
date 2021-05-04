@@ -44,7 +44,7 @@ echo "<VirtualHost *:80>
 #RewriteEngine on
 #RewriteCond %{SERVER_NAME} =alojthunberg.asix2.iesmontsia.cat [OR]
 #RewriteCond %{SERVER_NAME} =www.alojthunberg.asix2.iesmontsia.cat
-</VirtualHost>" >> /etc/apache2/sites-available/$user.conf
+</VirtualHost>" > /etc/apache2/sites-available/$user.conf
 
 cd /etc/apache2/sites-available
 a2ensite $user.conf
